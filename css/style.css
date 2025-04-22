@@ -74,3 +74,46 @@ body{
     padding: 1rem;
     box-shadow: var(--shadow);
 }
+
+/* Home Page */
+
+.Home::before{
+    content: "";
+    position: absolute;
+    z-index: -1;
+    background-image: url("../img/resepsi1.jpg");
+    background-position: 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    /* filter: grayscale(); */
+}
+
+.Home {
+    min-height: 100dvh;
+    position: relative;
+}
+
+/* navbar */
+
+.Home .navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    /* background-color: blue; */
+}
+
+.Home .navbar ul{
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    /* background-color: black; */
+}
+
+.Home .navbar ul li{
+    list-style: none;
+}
