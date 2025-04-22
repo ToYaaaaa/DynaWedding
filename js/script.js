@@ -1,0 +1,27 @@
+const Hari_H = new Date("2025-04-30T10:00:00").getTime();
+
+
+const countdown = setInterval(() => {
+    const sekarang = new Date().getTime();
+    const jarak = Hari_H - sekarang;
+
+    if(jarak < 0) {
+        clearInterval(countdown);
+        document.getElementById("#countdown").innerHTML = "Hari Bahagia Yang Dinantikan Telah Tiba!";
+        return;
+    };
+    // inisiasi hari jam menit detik
+    const hari = Math.floor(jarak / (1000* 60 * 60 *24));
+    const jam = Math.floor((jarak % (1000*60*60*24)) / (1000*60*60));
+    const menit = Math.floor((jarak % (1000*60*60)) / (1000*60))
+    const detik = Math.floor((jarak % (1000*60)) / 1000);
+
+
+    // console.log(hari);
+    // masukan ke dalam html
+    document.getElementById("hari").innerHTML = hari.toString().padStart(2, 0) + "H";
+    document.getElementById("jam").innerHTML = jam.toString().padStart(2, 0) + "J";
+    document.getElementById("menit").innerHTML = menit.toString().padStart(2, 0) + "M";
+    document.getElementById("detik").innerHTML = detik.toString().padStart(2, 0) + "D";
+}, 1000);
+
