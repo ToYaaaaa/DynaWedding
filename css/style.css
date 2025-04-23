@@ -22,8 +22,8 @@ body{
     position: absolute;
     background-image: url("../img/Backgroundd.jpg");
     background-position: 0px;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -75,65 +75,51 @@ body{
     box-shadow: var(--shadow);
 }
 
-/* Home Page */
 
-.Home::before{
-    content: "";
-    position: absolute;
-    z-index: -1;
-    background-image: url("../img/resepsi1.jpg");
-    background-position: 0px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100%;
-    filter:blur(3px);
-}
-
-.Home {
-    min-height: 100dvh;
+/* wrapper */
+.wrapper{
     position: relative;
-    color: var(--primer);
 }
-
 /* navbar */
 
-.Home .navbar .logo{
-    font-size: 2rem;
-    font-family: "Sacramento", cursive;
-}
-
-.Home .navbar .hamburger{
-    display: none;
-}
-
-.Home .navbar {
+.wrapper .navbar {
     width: 100%;
     display: flex;
     justify-content: space-between;
     padding: 1rem 1rem 0 1rem;
     position: sticky;
+    z-index: 10;
     top: 0;
     background-color: rgba(0, 0, 0, .5);
 }
 
-.Home .navbar .navlist ul{
+.wrapper .navbar .logo{
+    font-size: 2rem;
+    color: var(--primer);
+    font-family: "Sacramento", cursive;
+}
+
+.wrapper .navbar .hamburger{
+    display: none;
+}
+
+.wrapper .navbar .navlist ul{
     display: flex;
     justify-content: space-around;
     gap: 1rem;
 }
 
-.Home .navbar .navlist li{
+.wrapper .navbar .navlist li{
     list-style: none;
     text-shadow: var(--shadow);
 }
 
-.Home .navbar li a{
+.wrapper .navbar li a{
     text-decoration:none;
     color: var(--primer);
 }
 
-.Home .navbar li::after{
+.wrapper .navbar li::after{
     content: '';
     border-bottom: .2rem solid var(--primer);
     display: block;
@@ -142,15 +128,33 @@ body{
     transition: .1s ease;
 } 
 
-.Home .navbar li:hover::after{
+.wrapper .navbar li:hover::after{
     transform: scaleX(.8);
 } 
 
+/* Home Page */
+.wrapper .Home::before{
+    content: "";
+    position: absolute;
+    background-image: url("../img/resepsi1.jpg");
+    background-position: 0px;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 100vh;
+    filter:blur(3px);
+}
 
-/* home main */
+.wrapper .Home {
+    margin-top: -4%;
+    min-height: 100dvh;
+    color: var(--primer);
+}
+
 .Home .txtmain{
     text-align: center;
-    margin-top: 5%;
+    padding-top: 5%;
     /* background-color: black; */
     text-shadow: 2px 6px 6px black;
     color: #F5F5F5 ;
@@ -215,4 +219,12 @@ body{
     color: #ff71b8;
     font-size: 4rem;
     font-weight: bold;
+}
+
+/* info */
+.wrapper .info{
+    width: 100%;
+    height: 100dvh;
+    background-color: var(--sage);
+    margin-top: 2rem;
 }
