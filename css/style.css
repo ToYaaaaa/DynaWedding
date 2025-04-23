@@ -103,6 +103,10 @@ body{
     font-family: "Sacramento", cursive;
 }
 
+.Home .navbar .hamburger{
+    display: none;
+}
+
 .Home .navbar {
     width: 100%;
     display: flex;
@@ -113,13 +117,13 @@ body{
     background-color: rgba(0, 0, 0, .5);
 }
 
-.Home .navbar ul{
+.Home .navbar .navlist{
     display: flex;
     justify-content: space-around;
     gap: 1rem;
 }
 
-.Home .navbar ul li{
+.Home .navbar .navlist li{
     list-style: none;
     text-shadow: var(--shadow);
 }
@@ -129,7 +133,7 @@ body{
     color: var(--primer);
 }
 
-.Home .navbar li a::after{
+.Home .navbar li::after{
     content: '';
     border-bottom: .2rem solid var(--primer);
     display: block;
@@ -138,7 +142,7 @@ body{
     transition: .1s ease;
 } 
 
-.Home .navbar li a:hover::after{
+.Home .navbar li:hover::after{
     transform: scaleX(.8);
 } 
 
