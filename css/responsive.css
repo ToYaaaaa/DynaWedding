@@ -17,4 +17,99 @@
     html{
         font-size: 60%;
     }
+
+/* navbar responsive */
+.Home .navbar ul{
+    width: 50%;
+    height: 92dvh;
+    position: absolute;
+    right: 0;
+    top: 3.9rem;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, .5);
+    transition: .5s ease;
+}
+
+.Home .navbar ul li{
+    list-style: none;
+    text-shadow: var(--shadow);
+}
+
+.Home .navbar ul li a{
+    text-decoration:none;
+    color: var(--primer);
+}
+
+.Home .navbar ul li a::after{
+    content: '';
+    border-bottom: .2rem solid var(--primer);
+    display: block;
+    padding-bottom: .2rem;
+    left: 0;
+    transform: scaleX(0);
+    transition: .1s ease;
+}
+
+.Home .navbar ul li a:hover::after{
+    transform: scaleX(.3);
+    transform-origin: 0 0;
+} 
+
+.Home .calon {
+    text-align: center;
+    margin-top: 5%;
+    text-shadow: 2px 6px 6px black;
+    color: #f5f5f5;
+    font-weight: bold;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* calon */
+.Home .calon .calonpria{
+    width: 30rem;
+    /* background-color: black; */
+    text-align: end;
+    z-index: -1;
+}
+.Home .calon .calonpria img{
+    display: none;
+    position: absolute;
+    border-radius: 50%;
+    top: -1%;
+    left: 33%;
+    box-shadow: var(--shadow);
+    z-index: -1;
+}
+.Home .calon .calonpria h3{
+    font-family: "Sacramento", cursive;
+    color: #ff71b8;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+.Home .calon .calonwanita{
+    width: 30rem;
+    /* background-color: black; */
+    text-align: start;
+    z-index: -1;
+}
+.Home .calon .calonwanita img{
+    display: none;
+    position: absolute;
+    border-radius: 50%;
+    top: -1%;
+    right: 33%;
+    box-shadow: var(--shadow);
+    z-index: -1;
+}
+.Home .calon .calonwanita h3{
+    font-family: "Sacramento", cursive;
+    color: #ff71b8;
+    font-size: 4rem;
+    font-weight: bold;
+}
+
 }

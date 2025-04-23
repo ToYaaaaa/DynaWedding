@@ -111,20 +111,16 @@ body{
     position: sticky;
     top: 0;
     background-color: rgba(0, 0, 0, .5);
-    /* background-color: rgba(255, 255, 255, .8); */
-    /* color: black; */
 }
 
 .Home .navbar ul{
     display: flex;
     justify-content: space-around;
     gap: 1rem;
-    /* background-color: black; */
 }
 
 .Home .navbar ul li{
     list-style: none;
-    /* font-weight: bold; */
     text-shadow: var(--shadow);
 }
 
@@ -140,12 +136,11 @@ body{
     padding-bottom: .2rem;
     transform: scaleX(0);
     transition: .1s ease;
-}
+} 
 
 .Home .navbar li a:hover::after{
     transform: scaleX(.8);
-}
-
+} 
 
 
 /* home main */
@@ -180,6 +175,7 @@ body{
     width: 30rem;
     /* background-color: black; */
     text-align: end;
+    z-index: -1;
 }
 .Home .calon .calonpria img{
     position: absolute;
@@ -187,6 +183,7 @@ body{
     top: -1%;
     left: 33%;
     box-shadow: var(--shadow);
+    z-index: -1;
 }
 .Home .calon .calonpria h3{
     font-family: "Sacramento", cursive;
@@ -199,6 +196,7 @@ body{
     width: 30rem;
     /* background-color: black; */
     text-align: start;
+    z-index: -1;
 }
 .Home .calon .calonwanita img{
     position: absolute;
@@ -206,6 +204,7 @@ body{
     top: -1%;
     right: 33%;
     box-shadow: var(--shadow);
+    z-index: -1;
 }
 .Home .calon .calonwanita h3{
     font-family: "Sacramento", cursive;
