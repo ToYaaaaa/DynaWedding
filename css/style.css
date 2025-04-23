@@ -117,7 +117,7 @@ body{
     background-color: rgba(0, 0, 0, .5);
 }
 
-.Home .navbar .navlist{
+.Home .navbar .navlist ul{
     display: flex;
     justify-content: space-around;
     gap: 1rem;

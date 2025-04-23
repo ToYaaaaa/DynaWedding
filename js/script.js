@@ -1,5 +1,5 @@
+// timer  hero page
 const Hari_H = new Date("2025-04-30T10:00:00").getTime();
-
 
 const countdown = setInterval(() => {
     const sekarang = new Date().getTime();
@@ -25,3 +25,17 @@ const countdown = setInterval(() => {
     document.getElementById("detik").innerHTML = detik.toString().padStart(2, 0) + "D";
 }, 1000);
 
+
+// hamburger menu
+const hamburger = document.getElementById("hamburger");
+const navbar = document.getElementById("navlist");
+
+hamburger.addEventListener("click", () => {
+    navbar.classList.toggle("active");
+});
+
+document.addEventListener("click", (e) => {
+    if(!navbar.contains(e.target) && !hamburger.contains(e.target)){
+        navbar.classList.remove("active");
+    };
+});
