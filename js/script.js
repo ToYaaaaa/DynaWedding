@@ -39,3 +39,29 @@ document.addEventListener("click", (e) => {
         navbar.classList.remove("active");
     };
 });
+
+
+// disable scroll saat pertama dibuka
+const rootElement = document.querySelector(":root");
+
+function disableScroll() {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+    window.onscroll = function (){
+        window.scrollTo(scrollTop, scrollLeft);
+    }
+
+    rootElement.style.scrollBehavior = "auto";
+}
+
+function enableScroll(){
+    window.onscroll = function (){
+        rootElement.style.scrollBehavior = "smooth";
+        localStorage.setItem('opened', 'true');
+    }
+}
+
+if(!localStorage.getItem('opened')){
+    disableScroll()
+}
