@@ -55,7 +55,6 @@
     width: 30rem;
     margin-top: 30rem;
     text-align: end;
-    /* background-color: black; */
     z-index: -1;
 }
 .Home .calon .calonwanita img{
@@ -105,7 +104,41 @@
     color: white;
     background-color: var(--sage);
     border-top: 2px solid black;
+}
+.wrapper .story .timeline .timeline-odd{
+    width: 40%;
+    float: left;
+    border: 1px solid black;
+    padding: 2rem;
+    position: relative;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, .5);
+}
 
+.timeline  li .timeline-odd::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    transform: rotate(0deg);
+    border-top: 15px solid transparent;
+    border-left: 15px solid black;
+    border-right: 0 solid black;
+    border-bottom: 15px solid transparent;
+    top: 80px;
+    left: 311px;
+}
+
+.timeline li .timeline-odd::after{
+    content: "";
+    position: absolute;
+    display: inline-block;
+    transform: rotate(0deg);
+    border-top: 11px solid transparent;
+    border-left: 12px solid white;
+    border-right: 0 solid white;
+    border-bottom: 11px solid transparent;
+    top: 84px;
+    left: 311px;
 }
 }
 
@@ -249,6 +282,42 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.wrapper .story .timeline .timeline-odd{
+    width: 40%;
+    float: left;
+    border: 1px solid black;
+    padding: 2rem;
+    position: relative;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, .5);
+}
+
+.timeline  li .timeline-odd::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    transform: rotate(0deg);
+    border-top: 15px solid transparent;
+    border-left: 15px solid black;
+    border-right: 0 solid black;
+    border-bottom: 15px solid transparent;
+    top: 80px;
+    left: 311px;
+}
+
+.timeline li .timeline-odd::after{
+    content: "";
+    position: absolute;
+    display: inline-block;
+    transform: rotate(0deg);
+    border-top: 11px solid transparent;
+    border-left: 12px solid white;
+    border-right: 0 solid white;
+    border-bottom: 11px solid transparent;
+    top: 84px;
+    left: 311px;
 }
 
 }

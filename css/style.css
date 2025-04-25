@@ -367,3 +367,55 @@ body{
     top: 84px;
     right: -12px;
 }
+
+.wrapper .story .timeline .timeline-odd{
+    width: 40%;
+    float: right;
+    border: 1px solid black;
+    padding: 2rem;
+    position: relative;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, .5);
+}
+.timeline  li .timeline-odd::before{
+    content: "";
+    display: inline-block;
+    position: absolute;
+    transform: rotate(180deg);
+    border-top: 15px solid transparent;
+    border-left: 15px solid black;
+    border-right: 0 solid black;
+    border-bottom: 15px solid transparent;
+    top: 80px;
+    left: -15px;
+}
+
+.timeline li .timeline-odd::after{
+    content: "";
+    position: absolute;
+    display: inline-block;
+    transform: rotate(180deg);
+    border-top: 11px solid transparent;
+    border-left: 12px solid white;
+    border-right: 0 solid white;
+    border-bottom: 11px solid transparent;
+    top: 84px;
+    left: -12px;
+}
+
+/* gallery */
+
+.gallery{
+    border-top: 2px solid black;
+    width: 100%;
+    /* height: 10; */
+    background-color: var(--sage);
+}
+
+.gallery h2{
+    font-family: "Sacramento", cursive;
+    color: #ff71b8;
+    font-size: 4rem;
+    font-weight: bold;
+    margin-top: 5rem;
+}
