@@ -224,7 +224,7 @@ body{
 /* info */
 .wrapper .info{
     width: 100%;
-    height: 100dvh;
+    /* height: 100dvh; */
     background-color: var(--sage);
     text-shadow: var(--shadow);
 }
@@ -445,4 +445,29 @@ body{
 
 .rsvp button:hover{
     background-color: #ff71b8;
+}
+
+/* gifts */
+.gifts{
+    border-top: 2px solid black;
+    width: 100%;
+    height: 25rem;
+    background-color: var(--sage);
+}
+
+.gifts h2{
+    font-family: "Sacramento", cursive;
+    color: #ff71b8;
+    font-size: 4rem;
+    font-weight: bold;
+    margin-top: 5rem;
+}
+
+/* footer */
+
+footer{
+    background-color: #ff71b8;
+    font-weight: bold;
+    height: 2rem;
+    text-align: center;
 }
