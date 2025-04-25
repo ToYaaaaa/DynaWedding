@@ -419,3 +419,30 @@ body{
     font-weight: bold;
     margin-top: 5rem;
 }
+
+/* RSVP */
+.rsvp{
+    border-top: 2px solid black;
+    width: 100%;
+    /* height: 10; */
+    background-color: var(--sage);
+}
+
+.rsvp h2{
+    font-family: "Sacramento", cursive;
+    color: #ff71b8;
+    font-size: 4rem;
+    font-weight: bold;
+    margin-top: 5rem;
+}
+
+.rsvp button {
+    background-color: var(--primer);
+    color: black;
+    border: 1px solid black;
+
+}
+
+.rsvp button:hover{
+    background-color: #ff71b8;
+}
