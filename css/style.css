@@ -229,6 +229,11 @@ body{
     text-shadow: var(--shadow);
 }
 
+.wrapper .info .peta{
+    width: 400px;
+    height: 250px;
+}
+
 .wrapper .info h1{
     font-family: "Sacramento", cursive;
     color: #ff71b8;
@@ -424,7 +429,7 @@ body{
 .rsvp{
     border-top: 2px solid black;
     width: 100%;
-    /* height: 10; */
+    height: 19.5rem;
     background-color: var(--sage);
 }
 
@@ -461,6 +466,11 @@ body{
     font-size: 4rem;
     font-weight: bold;
     margin-top: 5rem;
+}
+
+.gifts table{
+    width: 400px;
+    height: 100px;
 }
 
 /* footer */
